@@ -12,7 +12,7 @@ var Init = {
   // when the directory exists.
   fromGithub: function(config, name, destination) {
     var expected_full_name = "truffle-init-" + name;
-    var temp_directory = temp.path({prefix: name + "-"});
+    var temp_directory = destination + "/tmp";
 
     var init_config;
 
